@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="assets/img/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Devchallenges</title>
+
+  </head>
+  <body>
+    
+  <header class="row">
+    <div class="border-box">
+      <p class="logo">This Interior</p>
+    </div>
+    <span class="icon" onclick="openMenu()">&#9776;</span>
+    <nav class="menu-overlay" id="menu">
+      <a href="javascript:void(0)" class="icon close" onclick="closeMenu()">&times;</a>
+      <ul class="menu-content">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="column">
+      <h1 class="tittle">Modern interior</h1>
+      <p class="text-info">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+      <p class="readmore">Read more <a href="#">&#9755;</a></p>
+    </div>   
+    <div class="img-content">
+      <img src="assets/img/photo1.png" class="img" alt="example of decoration">
+      <div class="card">
+        <div class="head-card">
+          <img src="assets/img/photo2.png" class="img-profile" alt="profile photo">
+          <div class="head-card-content">
+            <span class="name">Aliza Webber</span>
+            <span class="job">Interior designer</span>
+          </div>
+        </div>
+        <p class="text-card">Designed in 2020 by Aliza Webber</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="foot-text">
+      created by <a href="#">CristianSax24</a> - <a href="https://devchallenges.io/"> devChallenges.io</a>
+    </p>
+  </footer>
+    
+  </body>
+  <script>
+    function openMenu() {
+      document.getElementById("menu").style.width = "100%";
+    }
+    
+    function closeMenu() {
+      document.getElementById("menu").style.width = "0%";
+    }
+    </script>
+</html>
